@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.bootcss.com/extjs/6.0.0/classic/theme-classic/resources/theme-classic-all.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/extjs/6.0.0/ext-all.js"></script>
+    <script type="text/javascript">
+                // 渲染元素时调用
+        Ext.onReady(function() {
+            //创建一个ExtJS对象
+            //Ext.Panel版面预定义类
+            Ext.create('Ext.Panel', {
+                //版面必须呈现的元素
+                renderTo: 'helloWorldPanel',
+                //宽，高，标题，html内容
+                height: 200,
+                width: 600,
+                title: 'Hello world',
+                html: 'First Ext JS Hello World Program'
+            });
+        });
+    </script>
+</head>
+<body>
+<!--helloWorldPanel至于<div>中-->
+<div id="helloWorldPanel" />
+</body>
+</html>
